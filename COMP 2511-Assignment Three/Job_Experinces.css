@@ -1,12 +1,33 @@
-body, html {
+/* Nav link hover effect */
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 255, 0.8); /* Lighter blue color */
+    transition: color 0.3s ease-in-out; /* Customize the transition duration and easing */
+  }
+  
+  .custom-navbar .navbar-nav .nav-item .nav-link {
+    margin-left: -1px; /* Adjust this value as needed */
+    background-color: #007bff; /* Blue background */
+    border-radius: 0;
+    color: #fff; /* White text */
+  }
+  .custom-navbar .navbar-nav .nav-item {
+    margin-right: -1px; /* Adjust this value as needed */
+    border: 1px solid #007bff;
+  }
+  
+  .custom-navbar .navbar-collapse {
+    align-items: stretch;
+  }
+  body, html {
     margin: 0;
     padding: 0;
   }
   
   .navbar-brand,
   .nav-link {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 255); /* Blue color */
   }
+  
   
   .background-image-container {
     position: absolute;
@@ -25,7 +46,8 @@ body, html {
   
   .custom-navbar {
     position: relative;
-    background: transparent;
+    background: url('Images/9d.jpg') no-repeat center center; /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover;
     min-height: 350px;
   }
   
@@ -55,22 +77,28 @@ body, html {
     }
   }
 
-  /* Nav link hover effect */
-.custom-navbar .navbar-nav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.8); /* Adjust the color and transparency as needed */
-    transition: color 0.3s ease-in-out; /* Customize the transition duration and easing */
-  }
-  .custom-navbar .navbar-nav .nav-item .nav-link {
-    margin-left: -1px; /* Adjust this value as needed */
-    background-color: #007bff; /* Blue background */
-    border-radius: 0;
-    color: #fff; /* White text */
-  }
-  .custom-navbar .navbar-nav .nav-item {
-    margin-right: -1px; /* Adjust this value as needed */
-    border: 1px solid #007bff;
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
   
-  .custom-navbar .navbar-collapse {
-    align-items: stretch;
+  .card {
+    transition: transform 0.3s;
   }
+  
+  .card:hover {
+    transform: scale(1.5);
+    z-index: 1;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: lightblue;
+    transition: ease-in-out 0.5s;
+  }
+.audio-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+  
